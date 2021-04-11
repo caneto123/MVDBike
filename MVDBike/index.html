@@ -4,37 +4,37 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Proyecto CoderHouse" />
-    <meta name="author" content="MVD-Bike" />
+    <meta
+    name="description"
+    content="Automotora dedicada a la venta de los mejores autos del mercado - Nuevos y Usados"
+    />
+    <meta name="author" content="Automotora VIP" />
 
     <title>MVD-Bike</title>
 
     <!-- CSS de Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
     />
 
     <!-- CSS Font Awesome -->
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- CSS Propio -->
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -42,11 +42,9 @@
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container">
+      <div class="container-fluid d-flex justify-content-around">
         <!-- Logo -->
-        <a class="navbar-brand" href="index.html"
-          ><i class="fas fa-bicycle"></i><strong>MVD-Bike </strong></a
-        >
+        <a class="navbar-brand" href="index.html"><i class="fas fa-bicycle"></i><strong>MVD-Bike </strong></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,31 +54,37 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>          
         </button>
+        
         <!-- buttons -->
-        <div class="navbar-collapse collapse justify-content-end" id="links">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse me-auto justify-content-end" id="links" >
+          
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll navbarOne">             
             <!-- Colocar hover en verde -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rental</a>
+            <li class="nav-item active">
+              <a class="nav-link buttonONe" href="#">Rental</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  buttonONe">
               <a class="nav-link" href="#">Models</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item  buttonONe">
               <a class="nav-link" href="#">Accessories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">App</a>
+            </li>    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown buttonONe" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                APP
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">PlayStore</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Istore</a>
+              </div>  
             </li>
           </ul>
         </div>
         <!-- Login -->
-        <div
-          class="navbar-collapse collapse navbarIcons justify-content-end"
-          id="links"
-        >
+        <div class="collapse navbar-collapse navbarIcons justify-content-end" id="links">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
@@ -320,15 +324,15 @@
 
     <!-- JS de Popper.js -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
 
     <!-- JS de Bootstrap -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
 
