@@ -75,19 +75,19 @@ img {
   padding: 2rem;
 }
 
-.text {
-  margin-top: 2rem;
-  margin-left: 5rem;
+.textTitle {
+  margin-top: 5rem;
+  margin-left: 1rem;
   color: var(--font-colorTwo);
 }
 
-.text h2 {
-  text-align: left;
+.textTitle h2 {
+  
   font-size: 5rem;
   padding: 0.5rem;
 }
 
-.text p {
+.textTitle p {
   font-size: 1.2rem;
   color: var(--font-colorTwo);
 }
@@ -181,8 +181,8 @@ img {
 }
 
 .buttonSectionA {
-  margin-top: 2rem;
-  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .example_e {
