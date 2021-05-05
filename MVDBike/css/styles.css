@@ -7,6 +7,8 @@
   --thrid-color: #00c9a7;
   --fourth-color: #9ce492;
   --fifth-color: #cdee8f;
+  --eighth-color: #161f29;
+  --nineth-color: #00e164;
   --overlay-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -59,12 +61,22 @@ img {
 }
 
 .nav-item a {
-  color: #404040;
+  color: var(--eighth-color);
   font-size: 1rem;
   text-transform: uppercase;
   margin-right: 0.2rem;
 }
 
+.navbar-toggler {
+  background-color: #00c9a7;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.icon {
+  color: var(--eighth-color);
+}
+/* sectionA */
 /* sectionA */
 
 .sectionA {
@@ -75,21 +87,37 @@ img {
   padding: 2rem;
 }
 
-.text {
-  margin-top: 2rem;
-  margin-left: 5rem;
+.textTitle {
+  margin-top: 5rem;
+  margin-left: 1rem;
   color: var(--font-colorTwo);
 }
 
-.text h2 {
-  text-align: left;
+.textTitle h2 {
   font-size: 5rem;
   padding: 0.5rem;
 }
 
-.text p {
+.textTitle p {
   font-size: 1.2rem;
   color: var(--font-colorTwo);
+}
+
+@media (max-width: 767px) {
+  #home-carousel .car-image {
+    height: 250px;
+  }
+  #home h2 {
+    font-size: 50px;
+  }
+
+  #home p {
+    display: none;
+  }
+
+  .col-md-3 button {
+    display: none;
+  }
 }
 
 /* sectionB */
@@ -146,6 +174,53 @@ img {
   font-style: italic;
 }
 
+/* footer */
+/* footer */
+
+#footer {
+  background-color: var(--eighth-color);
+  margin-top: 40px;
+  padding: 40px 0 40px 0;
+  font-size: 16px;
+  color: var(--font-colorTwo);
+  text-decoration: none;
+}
+
+#footer ul li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer h4 {
+  font-size: 20px;
+  color: var(--nineth-color);
+  text-transform: uppercase;
+}
+
+.icon {
+  color: var(--font-colorTwo);
+  padding: 5px;
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+  color: var(--font-colorTwo);
+}
+
+.linksocial li {
+  margin-right: 2px;
+  display: inline-block;
+  justify-items: end;
+  align-items: center;
+  justify-self: end;
+  padding: 0.4rem;
+}
+
 /* buttons */
 /* buttons */
 
@@ -181,8 +256,8 @@ img {
 }
 
 .buttonSectionA {
-  margin-top: 2rem;
-  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .example_e {
@@ -202,7 +277,7 @@ img {
   font-weight: 700 !important;
   letter-spacing: 3px;
   background: none;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  /* -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57); */
   transition: all 0.3s ease 0s;
 }

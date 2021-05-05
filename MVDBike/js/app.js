@@ -1,65 +1,44 @@
-// console.log("Simulador interactivo");
+// console.log("Inventario para bicis 2");
 
-
-// //Validar que esto sea un string
-// function nameBike() {
-//   let myName = prompt("Cual es tu nombre?");
-//   if (myName != "" && myName != 0) {
-//     console.log(myName);
-//   } else {
-//     alert("Gime More");
+// class Bicicletas {
+//   constructor(marca,rodado,color) {
+//     this.marca = marca.toLowerCase();
+//     // validar que el rodado sea un número
+//     this.rodado = parseFloat(rodado); 
+//     this.color = color.toLowerCase()
+//     //marca - rodado - nombre - frenos - cambios -color
 //   }
-//   return myName;
-// }
-// //Validar que esto sea un number
-// function dayBike() {
-//   let day = prompt("Cuantos días quieres usarla?");
-
-//   if (day >= 0 && day != "") {
-//     console.log(dayBike);
-//   } else {
-//     alert("debes alquilarla más días");
-//   }
-//   return day;
-// }
-// //Validar que esto sea un number
-// function numberBike() {
-//   let bike = prompt("How many bikes do you need?");
-  
-//   if (bike >= 0 && bike != "") {
-//     console.log(numberBike);
-//   } else {
-//     alert("seguro?");
-//   }
-//   return bike;
 // }
 
-// function presupuesto() {
-//   const primer = nameBike();
-//   const segundo = numberBike();
-//   const tercero = dayBike();
-//   suma = 0;
-//   if (segundo !== 0 && tercero !== 0) {
-//     suma = segundo * tercero * 300;
-//     alert( "Holis "+" "+ primer +" "+ "el número de bicis a alquilar es de"+" " +segundo + " "+"el número de días es de"+" " + tercero + " " + "sumando un total de pesos de "+" "+suma);
-//   } else {
-//     alert("chao");
-//   }
-//   return suma;
-// }
+// const biciS = [];
 
-// const primer = nameBike();
-// console.log(primer);
+// const getAll = () => {
+//   return biciS;
+// };
 
-// const segundo = numberBike();
-// console.log(segundo);
+// const create = (bicibike) => {
+//   biciS.push(bicibike);
+// };
 
-// const tercero = dayBike();
-// console.log(tercero);
+// const usuario = prompt("Cual es su nombre");
 
-// const total = presupuesto();
-// console.log(total);
+// const marca = prompt("Cual es la marca de tu bicicleta");
+// const rodado = prompt("escribe en números el rodado de tu bici");
+// const color = prompt("Dime el color principal de tu bici");
 
+
+// const bici1 = new Bicicletas(marca,rodado,color)
+
+// create (bici1);
+
+// console.log(getAll())
+
+// const marcaS = marca;
+// const rodadoS = rodado;
+// const colorS = color;
+// const nombre = usuario;
+
+// alert(`Hola  ${nombre} las características de tu bici son las siguientes marca ${marcaS}, de color ${colorS} y con un rodado número ${rodadoS}`)
 
 
 

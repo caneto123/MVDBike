@@ -42,10 +42,10 @@
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container-fluid d-flex justify-content-around">
+      <div class="container d-flex justify-content-around">
         <!-- Logo -->
         <a class="navbar-brand" href="index.html"><i class="fas fa-bicycle"></i><strong>MVD-Bike </strong></a>
-        <button
+          <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -53,14 +53,14 @@
           aria-controls="links"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>          
-        </button>
+          >
+            <span class="navbar-toggler-icon"></span>            
+          </button>
         
         <!-- buttons -->
         <div class="collapse navbar-collapse me-auto justify-content-end" id="links" >
           
-          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll navbarOne">             
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">             
             <!-- Colocar hover en verde -->
             <li class="nav-item active">
               <a class="nav-link buttonONe" href="#">Rental</a>
@@ -87,21 +87,16 @@
         <div class="collapse navbar-collapse navbarIcons justify-content-end" id="links">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+              <a class="nav-link" href="#"><i class="icon2 fas fa-user"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fas fa-map-marker-alt"></i
-              ></a>
+              <a class="nav-link" href="#"><i class="icon2 fas fa-map-marker-alt"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="far fa-calendar-alt"></i
-              ></a>
+              <a class="nav-link" href="#"><i class="icon2 far fa-calendar-alt"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fas fa-money-check-alt"></i
+              <a class="nav-link" href="#"><i class="icon2 fas fa-money-check-alt"></i
               ></a>
             </li>
           </ul>
@@ -112,27 +107,36 @@
     <!-- sectionA -->
     <!-- sectionA -->
     <section class="sectionA">
-      <div class="container">
-        <div class="text">
-          <!-- make a gallery -->
-          <h2>
-            <strong
-              >Share your bike <br />
-              and win money</strong
-            >
-          </h2>
-          <p>
-            MVD-Bike helps active people connect with trusted <br />
-            bike owners all over the world. Is a premier bike rental <br />
-            and sharing service that provide a platform for share <br />
-            your bike and win money easy
-          </p>
+      <div id="home" class="container">
+        <div class="container">
+
+        <div class="row">
+          <div class="col-md-8 textTitle">            
+            <h2 class="text-md-start">
+              <strong>Share your bike and win money</strong>
+            </h2>
+            <p class="text-md-start">
+              MVD-Bike helps active people connect with trusted bike owners all over the world. Is a premier bike rental 
+              and sharing service that provide a platform for share your bike and win money easy
+            </p>
+
+            
+            <div class="row">
+              <div class="col-md-3">
+                <button class="example_e"><strong>Find a ride</strong></button>
+              </div>
+              <div class="col-md-3">
+                <button class="example_e"><strong>How it works</strong></button>
+              </div>
+            </div>
+
+            <div class="badge bg-primary text-wrap" >
+              This text should wrap.
+            </div>
+            
+
+          </div>
         </div>
-        <div class="buttonSectionA">
-          <button class="example_e">
-            <strong>Find a ride to rent</strong>
-          </button>
-          <button class="example_e"><strong>How it works</strong></button>
         </div>
       </div>
     </section>
@@ -144,7 +148,7 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-8 textPrincipal">
-            <h2><strong>What is MVD-Bike?</strong></h2>
+            <h2><strong>What is <br> MVD-Bike?</strong></h2>
             <p>
               Traffic risks to the cyclist are similar to those faced by
               motorcyclists, with the main differences being that bicycling
@@ -180,7 +184,7 @@
                     for="validationDefault01 name"
                     class="form-label"
                     required
-                    >Nombre</label
+                    >Name</label
                   >
                   <input
                     type="text"
@@ -205,7 +209,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="validationCustom03 numeros">Teléfono</label>
+                  <label for="validationCustom03 numeros">Phone</label>
                   <input
                     type="text"
                     name="numeros"
@@ -252,7 +256,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="message">Mensaje</label>
+                  <label for="message">Message</label>
                   <textarea
                     name="message"
                     rows="8"
@@ -304,7 +308,7 @@
                     class="btn btn-success"
                     onclick="getData()"
                   >
-                    Enviar
+                    GO
                   </button>
                 </div>
               </div>
@@ -314,6 +318,117 @@
         </div>
       </div>
     </section>
+
+    <!-- sectionC -->
+    <!-- sectionC -->
+    <section class="section-c">
+      <div class="container">
+        <h1 class="page-header">
+          Rent abikeanywhere in the world!
+        </h1>
+
+        <hr/>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <h4><i class="fas fa-car"></i>Find the perfect ride</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  Search through thousands of rides all over the world for one near you. Search by city, zip code, ride type, available dates, and more.
+                </p>
+                <a href="#" class="btn btn-outline-secondary"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <h4><i class="fas fa-bullhorn"></i>Book a ride & pay</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  Check the available dates and put in a request or two and message the owner. Then book & pay through Spinlister. It’s cashless and convenient.
+                </p>
+                <a href="#" class="btn btn-outline-secondary"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <h4><i class="far fa-file-alt"></i>Get the ride and have fun</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  Make up to $500/month by sharing your bike, surfboard, SUP, snowboard or skis with travelers, racers, and enthusiasts.
+                </p>
+                <a href="#" class="btn btn-outline-secondary">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+
+    <!-- footer -->
+    <!-- footer -->
+
+    <footer>
+      <div id="footer">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Contact in Uruguay</h2>
+            <ul>
+              <li><a class="" href="#"> <i class=" icon far fa-envelope"></i>canetocaneto@hotmail.com</a></li>
+              <li><a class="" href="#"> <i class=" icon fas fa-phone"></i>Administration</a></li>
+              <!-- <li>Support</li> -->
+              <li><a href=""> <i class=" icon fas fa-map-marker-alt"></i>Agustin Abreu 2783 - Montevideo</a></li>              
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>System</h2>
+              <ul>
+                <li><a href="#">Equipmen</a></li>                
+                <li><a href="#">Park</a></li>
+                <li><a href="#">Garage</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>About us</h2>
+              <ul>
+                <li><a href="#">How It Works</a></li>                
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+              <h4>Connect</h4>
+              <div class="  linksocial">                
+                  <ul>                  
+                    <li><a href="https://twitter.com/" class="icoTwitter"><i class="fab fa-twitter fa-1x"></i></a></li>
+                    <li><a href="https://facebook.com/" class="icoFacebook"><i class="fab fa-facebook fa-1x"></i></a></li>
+                    <li><a href="https://instagram.com/" class="icoInstagram"><i class="fab fa-instagram fa-1x"></i></a></li>
+                  </ul>      
+              </div> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <p style="color: #ddd;">Copyright &copy; MVD-Bike 2020</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script
