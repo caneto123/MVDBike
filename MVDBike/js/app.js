@@ -1,64 +1,115 @@
-// console.log("Inventario para bicis 2");
+console.log("Validation with Javascript");
+ 
 
-// class Bicicletas {
-//   constructor(marca,rodado,color) {
-//     this.marca = marca.toLowerCase();
-//     // validar que el rodado sea un número
-//     this.rodado = parseFloat(rodado); 
-//     this.color = color.toLowerCase()
-//     //marca - rodado - nombre - frenos - cambios -color
-//   }
-// }
+/* dropdown */
+/* dropdown */
 
-// const biciS = [];
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-// const getAll = () => {
-//   return biciS;
-// };
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
-// const create = (bicibike) => {
-//   biciS.push(bicibike);
-// };
+//Styles with Jquery
+$(".textPrincipal1").fadeOut(2000, () => {
+  $(".textPrincipal1").show()
+});
 
-// const usuario = prompt("Cual es su nombre");
+$( "#TextBtn" ).click( () => {
+  $( "p" ).show( "slow" ) 
+});
 
-// const marca = prompt("Cual es la marca de tu bicicleta");
-// const rodado = prompt("escribe en números el rodado de tu bici");
-// const color = prompt("Dime el color principal de tu bici");
+$("#TextBtn").on('click', () => {
+  $(".textPrincipal1").addClass("textPrincipalModificado")
+});
 
+// Form validation 
+const form = document.getElementById("form");
+const fname = document.getElementById("fname");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
 
-// const bici1 = new Bicicletas(marca,rodado,color)
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// create (bici1);
+  checkInputs();
+});
 
-// console.log(getAll())
+function checkInputs() {
+  
+  const fnameValue = fname.value.trim();
+  const emailValue = email.value.trim();
+  const phoneValue = phone.value.trim();
+  const passwordValue = password.value.trim();
+  const password2Value = password2.value.trim();
 
-// const marcaS = marca;
-// const rodadoS = rodado;
-// const colorS = color;
-// const nombre = usuario;
+  if (fnameValue === "") {
+    setErrorFor(fname, "name cannot be blank");
+  } else {
+    setSuccessFor(fname);
+  }
 
-// alert(`Hola  ${nombre} las características de tu bici son las siguientes marca ${marcaS}, de color ${colorS} y con un rodado número ${rodadoS}`)
+  if (phoneValue === "") {
+    setErrorFor(phone, "phone cannot be blank");
+  } else {
+    setSuccessFor(phone);
+  }
 
+  if (emailValue === "") {
+    setErrorFor(email, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(email, "Not a valid email");
+  } else {
+    setSuccessFor(email);
+  }
 
+  if (passwordValue === "") {
+    setErrorFor(password, "Password cannot be blank");
+  } else {
+    setSuccessFor(password);
+  }
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
+  if (password2Value === "") {
+    setErrorFor(password2, "Password2 cannot be blank");
+  } else if (passwordValue !== password2Value) {
+    setErrorFor(password2, "Passwords does not match");
+  } else {
+    setSuccessFor(password2);
+  }
+}
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+function setErrorFor(input, message) {
+  const formGroup = input.parentElement;
+  const small = formGroup.querySelector("small");
+  formGroup.className = "form-group error";
+  small.innerText = message;
+}
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+function setSuccessFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.className = "form-group success";
+}
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}
+
+// Form data 
