@@ -336,6 +336,16 @@ img {
   min-height: 100vh;
 }
 
+.btntype {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:2rem 0;
+  width: 85%;
+  margin:0 auto;
+}
+
 .arrival .box-container{
   display: flex;
   align-items: center;
@@ -355,7 +365,7 @@ img {
 }
 
 .arrival .box-container .box .image{
-  /* height: 20rem; */
+  height: 20rem;
   padding:1rem;
   text-align: center;
   background:#f0f0f0;
@@ -429,13 +439,6 @@ img {
 .arrival .box-container .box .overlay a:hover{
   color:var(--blue);
 }
-
-
-
-
-
-
-
 
 /* footer */
 /* footer */

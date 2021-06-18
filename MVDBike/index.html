@@ -71,44 +71,9 @@
             <li class="nav-item  buttonONe">
               <a class="nav-link" href="#">Accessories</a>
             </li>
-            <!-- dropdown -->
-            <!-- dropdown -->
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-            
-            <!-- Arreglar esto     -->
-            <!-- <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div> -->
-
-            <!-- <li class="nav-item dropdown buttonONe">
-              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                APP
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">PlayStore</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Istore</a>
-              </div>  
-            </li> -->
-
+            <li class="nav-item  buttonONe">
+              <a class="nav-link" href="#">APP</a>
+            </li>
           </ul>
         </div>
         <div class="collapse navbar-collapse navbarIcons justify-content-end" id="links">
@@ -350,12 +315,42 @@
 
     <!-- sectionC -->
     <!-- sectionC -->
-    <section class="section-c arrival" id="arrival">        <hr/>
-        <div class="row  box-container">
+    <section class="section-c arrival" id="arrival">
+      <hr/>
+      <div class="row btntype">
+        <div class="col">
+          <button
+              type="submit"
+              class="btn btn-success btn-lg"  
+              id="Mountain"                  
+              >
+              Mountain
+            </button>
+        </div>
+        <div class="col">
+          <button
+            type="submit"
+            class="btn btn-success btn-lg"  
+            id="Road"                  
+            >
+            Road
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="submit"
+            class="btn btn-success btn-lg"  
+            id="Hibryd"                  
+            >
+            Hibryd
+          </button>
+        </div>
+      </div>
+      <div class="row  box-container">
           <div class="col-md-4 box">      
-            <div class="card mb-3">
+            <div class="card mb-3" id="Mountain">
               <div class="card-body image">
-                <img src="img/img4.jpg" alt="">
+                <img src="img/img6.jpg" alt="">
               </div>
               <div class="card-header info">
                 <h4>Mountain</h4>
@@ -372,11 +367,10 @@
               </div>
             </div>
           </div>
-
           <div class="col-md-4 box">
-            <div class="card mb-3">              
+            <div class="card mb-3" id="Road">              
               <div class="card-body image">
-                <img src="img/img4.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
               </div>
               <div class="card-header info">
                 <h4>Road</h4>
@@ -394,7 +388,7 @@
             </div>
           </div>
           <div class="col-md-4 box">    
-            <div class="card mb-3">
+            <div class="card mb-3" id="Hibryd">
               <div class="card-body image">
                 <img src="img/img4.jpg" alt="">
               </div>
@@ -413,12 +407,74 @@
               </div>
             </div>
           </div>
-        </div>    
+          <div class="col-md-4 box">      
+            <div class="card mb-3" id="Mountain">
+              <div class="card-body image">
+                <img src="img/img6.jpg" alt="">
+              </div>
+              <div class="card-header info">
+                <h4>Mountain</h4>
+                <div class="subInfo">
+                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 box">
+            <div class="card mb-3" id="Road">              
+              <div class="card-body image">
+                <img src="img/img3.jpg" alt="">
+              </div>
+              <div class="card-header info">
+                <h4>Road</h4>
+                <div class="subInfo">
+                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 box">    
+            <div class="card mb-3" id="Hibryd">
+              <div class="card-body image">
+                <img src="img/img4.jpg" alt="">
+              </div>
+              <div class="card-header info">
+                <h4>Hibryd</h4>
+                <div class="subInfo">
+                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>    
     </section>
 
     <!-- sectionD -->
     <!-- sectionD -->
-    <section class="arrival" id="arrival"></section>
+    <section class="arrival" id="arrival">
+
+    </section>
 
 
     <!-- footer -->
