@@ -11,7 +11,7 @@
     name="description"
     content="App creada para el alquiler de tu bici"
     />
-    <meta name="author" content="Automotora VIP" />
+    <meta name="author" content="MVD-Bike" />
 
     <title>MVD-Bike</title>
 
@@ -63,17 +63,17 @@
         <div class="collapse navbar-collapse me-auto justify-content-end" id="links">
           <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">            
             <li class="nav-item active">
-              <a class="nav-link buttonONe" href="#">Rental</a>
+              <a class="nav-link buttonONe" href="#">Shop</a>
             </li>
             <li class="nav-item  buttonONe">
-              <a class="nav-link" href="#">Models</a>
+              <a class="nav-link" href="#">Support</a>
             </li>
             <li class="nav-item  buttonONe">
-              <a class="nav-link" href="#">Accessories</a>
+              <a class="nav-link" href="#">Community</a>
             </li>
-            <li class="nav-item  buttonONe">
+            <!-- <li class="nav-item  buttonONe">
               <a class="nav-link" href="#">APP</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="collapse navbar-collapse navbarIcons justify-content-end" id="links">
@@ -85,11 +85,11 @@
               <a class="nav-link" href="#"><i class="icon2 fas fa-map-marker-alt"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon2 far fa-calendar-alt"></i></a>
+              <a class="nav-link" href="#"><i class="icon2 fas fa-search"></i></i></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#"><i class="icon2 fas fa-money-check-alt"></i></a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -97,7 +97,7 @@
     <!-- sectionA -->
     <!-- sectionA -->
     <section class="sectionA">
-      <div id="home" class="container">
+      <div class="container" id="home">
           <div class="row">
             <div class="col-md-8 textTitle">            
               <h2 class="text-md-start">
@@ -111,17 +111,17 @@
                 <div class="col-md-3">
                   <button class="example_e"><strong>Find a ride</strong></button>
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                   <button class="example_e"><strong>How it works</strong></button>
-                </div>
+                </div> -->
               </div>
-              <div class="badge bg-primary text-wrap" >
+              <!-- <div class="badge bg-primary text-wrap" >
                 This text should wrap.
               </div>
               <div class="badge bg-primary text-wrap" >
                 This text should wrap.
               </div>
-            </div>
+            </div> -->
           </div>
       </div>
     </section>
@@ -161,7 +161,7 @@
             </div>
             <button
               type="submit"
-              class="btn btn-success"  
+              class="btn btn-textPrincipal btn-success"  
               id="TextBtn"                  
               >
               Show more!
@@ -171,10 +171,13 @@
           <!-- form -->
           <!-- form -->
           <!-- action="https://formspree.io/mknznvvg" method="POST" -->
-          <div class="col-3 budget textB">
-            <div class="headerForm"><h2><strong>Create Account</strong></h2></div>            
-            <form class="row form g-3 needs-validation " novalidate name="myForm" id="form">
-              <div class="modal-body">
+
+          <div class="col-3 textPrincipalForm">
+            <div class="form-control-sm textB">
+              <h2><strong>Create Account</strong></h2>                        
+              <form class="row form  g-3 needs-validation" novalidate name="myForm" id="form">
+              <!-- <div class="headerForm"><h2><strong>Create Account</strong></h2></div>               -->
+                <div class="modal-body test1">
                 <div class="form-group">
                   <label
                     for="fname"
@@ -297,7 +300,7 @@
                     Hybrid/commuter bikes
                   </label>
                 </div>
-                <div class="form-group">
+                <div class="form-group btn-textSecudary2">
                   <button
                     type="submit"
                     class="btn btn-success"                    
@@ -305,9 +308,12 @@
                     Enviar
                   </button>
                 </div>
-              </div>
-            </form>
-            <!-- /.form-group -->
+                </div>
+              </form>
+            </div>
+            <!-- form -->
+            <!-- form -->
+
           </div>
         </div>
       </div>
@@ -316,53 +322,37 @@
     <!-- sectionC -->
     <!-- sectionC -->
     <section class="section-c arrival" id="arrival">
-      <hr/>
-      <div class="row btntype">
-        <div class="col">
-          <button
-              type="submit"
-              class="btn btn-success btn-lg"  
-              id="Mountain"                  
-              >
-              Mountain
-            </button>
-        </div>
-        <div class="col">
-          <button
-            type="submit"
-            class="btn btn-success btn-lg"  
-            id="Road"                  
-            >
-            Road
-          </button>
-        </div>
-        <div class="col">
-          <button
-            type="submit"
-            class="btn btn-success btn-lg"  
-            id="Hibryd"                  
-            >
-            Hibryd
-          </button>
-        </div>
-      </div>
-      <div class="row  box-container">
+      <div class="container">
+        <div class="row justify-content-center">     
+          <div class="TextSection-c"><h2 class="TextSectionH"> <strong>Popular Products</strong></h2></div>
+          <!-- Arreglar todos los test de esta sección -->
+          <div class="me-auto justify-content-center test1" id="links">
+            <ul class="my-2 my-lg-0">
+              <li class="test3 active buttonONe test2">
+                <a class="nav-link" href="#">All</a>
+              </li>            
+              <li class="nav-item buttonONe test2">
+                <a class="nav-link" href="#">Mountain</a>
+              </li>
+              <li class="nav-item  buttonONe test2">
+                <a class="nav-link" href="#">Road</a>
+              </li>
+              <li class="nav-item  buttonONe test2">
+                <a class="nav-link" href="#">Hibryd</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        <div class="row  box-container">
           <div class="col-md-4 box">      
             <div class="card mb-3" id="Mountain">
               <div class="card-body image">
                 <img src="img/img6.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Mountain</h4>
+                <h4><strong>Marlin 6</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>                
               </div>
             </div>
@@ -373,16 +363,9 @@
                 <img src="img/img3.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Road</h4>
+                <h4> <strong>X-Caliber 8</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>
               </div>
             </div>
@@ -393,16 +376,9 @@
                 <img src="img/img4.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Hibryd</h4>
+                <h4><strong>Supercaliber 9.7</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>
               </div>
             </div>
@@ -413,16 +389,9 @@
                 <img src="img/img6.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Mountain</h4>
+                <h4><strong>Marlin 6</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>                
               </div>
             </div>
@@ -433,16 +402,9 @@
                 <img src="img/img3.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Road</h4>
+                <h4> <strong>X-Caliber 8</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>
               </div>
             </div>
@@ -453,29 +415,19 @@
                 <img src="img/img4.jpg" alt="">
               </div>
               <div class="card-header info">
-                <h4>Hibryd</h4>
+                <h4><strong>Supercaliber 9.7</strong></h4>
                 <div class="subInfo">
-                  <strong class="price"> ₹1000/- <span>₹1500/-</span> </strong>
-                  <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half"></i>
-                  </div>
+                  <h5 class="price"> 100$ </h5>
                 </div>
               </div>
             </div>
           </div>
-      </div>    
+        </div>
+      </div>      
     </section>
 
     <!-- sectionD -->
     <!-- sectionD -->
-    <section class="arrival" id="arrival">
-
-    </section>
-
 
     <!-- footer -->
     <!-- footer -->
