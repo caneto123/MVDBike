@@ -1,17 +1,17 @@
 console.log("Validation with Javascript");
 
 //Styles with Jquery
-$(".textPrincipal1").fadeOut(2000, () => {
-  $(".textPrincipal1").show()
-});
+// $(".textPrincipal1").fadeOut(2000, () => {
+//   $(".textPrincipal1").show()
+// });
 
-$( "#TextBtn" ).click( () => {
-  $( "p" ).show( "slow" ) 
-});
+// $( "#TextBtn" ).click( () => {
+//   $( "p" ).show( "slow" ) 
+// });
 
-$("#TextBtn").on('click', () => {
-  $(".textPrincipal1").addClass("textPrincipalModificado")
-});
+// $("#TextBtn").on('click', () => {
+//   $(".textPrincipal1").addClass("textPrincipalModificado")
+// });
 
 // Form validation 
 const form = document.getElementById("form");
