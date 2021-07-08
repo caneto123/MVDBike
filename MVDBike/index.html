@@ -103,7 +103,7 @@
               </p>            
               <div class="row">
                 <div class="col-md-3">
-                  <button class="buttonSectionA"><strong>Find a ride</strong></button>
+                  <button class="buttonSectionA"><span>Find a ride</button>
                 </div> 
               </div>
           </div>
@@ -114,10 +114,9 @@
     <!-- sectionB -->
     <section class="sectionB">
       <div class="container">
-        <div class="row justify-content-between ">
-          
-          <div class="col-8 textPrincipal">
-            <div class="textPrincipalImg" ><h2 ><strong>What is <br> MVD-Bike?</strong></h2></div>
+        <div class="row justify-content-between">          
+          <div class="col-8 textPrincipal textPrincipalBox">
+            <div class="textPrincipalImg" ><h2><strong>What is <br> MVD-Bike?</strong></h2></div>
             <div class="textSecudary">
               <p>
                 Traffic risks to the cyclist are similar to those faced by
@@ -137,28 +136,25 @@
                 veniam ea sequi eligendi qui sed quas ipsum. Iusto, totam debitis?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
               </p>
-            </div>
- 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end test1 ">
+            </div> 
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button
                 type="submit"
-                class="btn buttonSectionB btn-success me-md-2"  
+                class="btn buttonSectionB me-md-2"  
                 id="TextBtn"                  
               >
               Show more!
               </button>
             </div>
           </div>
-
           <!-- form -->
           <!-- form -->
           <!-- action="https://formspree.io/mknznvvg" method="POST" -->
-
           <div class="col-3 textPrincipalForm">
             <div class="form-control-sm">
               <div class="textPrincipalFormTitle"><h2><strong>Create Account</strong></h2></div>                                    
               <form class="row form  g-3 needs-validation" novalidate name="myForm" id="form">
-                <div class="modal-body test1">
+                <div class="modal-body">
                   <div class="form-group">
                   <label
                     for="fname"
@@ -276,16 +272,26 @@
                     Hybrid/commuter bikes
                   </label>
                   </div>
-                  <div class="form-group btn-textSecudary2">
+                  <div class="d-grid gap-2 d-md-flex  ">
+                    <button
+                      type="submit"
+                      class="btn buttonSectionBForm me-md-2 mx-auto"  
+                      id="TextBtn"                  
+                    >
+                      Send!
+                    </button>
+                  </div>
+                </div>
+                  <!-- <div class="form-group btn-textSecudary2">
                     <div class="buttonForm">
                       <button
                       type="submit"
-                      class="btn btn-success"                    
+                      class="btn "                    
                       >
-                      Send
+                      Send btn-success
                       </button>
                     </div>                  
-                  </div>
+                  </div> -->
                 </div>
               </form>
             </div>
@@ -305,11 +311,11 @@
           <div class="col-md-8"><h2 class="TextSectionC"> <strong>Popular Products</strong></h2></div>
           <div class="me-auto justify-content-center products" id="links">
             <ul class="my-2 my-lg-0">
-              <li class="test3 active buttonOne kindProduct">
-                <a class="nav-link test4" href="#">All</a>
-              </li>            
+              <li class="test3 active buttonOne kindProduct">                
+                <a class="" href="#" onclick="myFunction()">All</a>
+              </li> 
               <li class="nav-item buttonOne kindProduct">
-                <a class="nav-link" href="#">Mountain</a>
+                <a class="" href="#" onclick="myFunction2()">Mountain</a>
               </li>
               <li class="nav-item  buttonOne kindProduct">
                 <a class="nav-link" href="#">Road</a>
@@ -321,7 +327,7 @@
           </div>
         </div> 
         <div class="row  box-container">
-          <div class="col-md-4 box">      
+          <div class="col-md-4 box" id="myDIV">      
             <div class="card mb-3" id="Mountain">
               <div class="card-body image">
                 <img src="img/img6.jpg" alt="">
@@ -329,12 +335,12 @@
               <div class="card-header info">
                 <h4><strong>Marlin 6</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Mountain </h5>
                 </div>                
               </div>
             </div>
           </div>
-          <div class="col-md-4 box">
+          <div class="col-md-4 box" id="myDIV2"> 
             <div class="card mb-3" id="Road">              
               <div class="card-body image">
                 <img src="img/img3.jpg" alt="">
@@ -342,12 +348,12 @@
               <div class="card-header info">
                 <h4> <strong>X-Caliber 8</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Mountain </h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 box">    
+          <div class="col-md-4 box" id="myDIV">     
             <div class="card mb-3" id="Hibryd">
               <div class="card-body image">
                 <img src="img/img4.jpg" alt="">
@@ -355,12 +361,12 @@
               <div class="card-header info">
                 <h4><strong>Supercaliber 9.7</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Road </h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 box">      
+          <div class="col-md-4 box" id="myDIV">       
             <div class="card mb-3" id="Mountain">
               <div class="card-body image">
                 <img src="img/img6.jpg" alt="">
@@ -368,12 +374,12 @@
               <div class="card-header info">
                 <h4><strong>Marlin 6</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Road </h5>
                 </div>                
               </div>
             </div>
           </div>
-          <div class="col-md-4 box">
+          <div class="col-md-4 box" id="myDIV"> 
             <div class="card mb-3" id="Road">              
               <div class="card-body image">
                 <img src="img/img3.jpg" alt="">
@@ -381,12 +387,12 @@
               <div class="card-header info">
                 <h4> <strong>X-Caliber 8</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Hibryd </h5>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 box">    
+          <div class="col-md-4 box" id="myDIV">     
             <div class="card mb-3" id="Hibryd">
               <div class="card-body image">
                 <img src="img/img4.jpg" alt="">
@@ -394,7 +400,7 @@
               <div class="card-header info">
                 <h4><strong>Supercaliber 9.7</strong></h4>
                 <div class="subInfo">
-                  <h5 class="price"> 100$ </h5>
+                  <h5 class="price"> Hibryd </h5>
                 </div>
               </div>
             </div>
@@ -412,16 +418,16 @@
     <footer>
       <div id="footer">
         <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-4">
             <h4>Contact in Uruguay</h2>
             <ul>
               <li><a class="" href="#"> <i class=" icon far fa-envelope"></i>canetocaneto@hotmail.com</a></li>
               <li><a class="" href="#"> <i class=" icon fas fa-phone"></i>Administration</a></li>
-              <li><a href=""> <i class=" icon fas fa-map-marker-alt"></i>Agustin Abreu 2783 - Montevideo</a></li>              
+              <li><a href=""> <i class=" icon fas fa-map-marker-alt"></i>Galicia 1308 - Montevideo</a></li>              
             </ul>
-          </div>
-          <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
             <h4>System</h2>
               <ul>
                 <li><a href="#">Equipmen</a></li>                
@@ -429,8 +435,8 @@
                 <li><a href="#">Garage</a></li>
                 <li><a href="#">Security</a></li>
               </ul>
-          </div>
-          <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
             <h4>About us</h2>
               <ul>
                 <li><a href="#">How It Works</a></li>                
@@ -445,14 +451,13 @@
                     <li><a href="https://instagram.com/" class="icoInstagram"><i class="fab fa-instagram fa-1x"></i></a></li>
                   </ul>      
               </div> 
+            </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <p style="color: #ddd;">Copyright &copy; MVD-Bike 2020</p>
+          <div class="row">
+            <div class="col-md-3">
+              <p style="color: #ddd;">Copyright &copy; MVD-Bike 2020</p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </footer>

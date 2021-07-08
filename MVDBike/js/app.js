@@ -1,5 +1,25 @@
 console.log("Validation with Javascript");
 
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+
+
+
 //Styles with Jquery
 // $(".textPrincipal1").fadeOut(2000, () => {
 //   $(".textPrincipal1").show()
